@@ -324,6 +324,7 @@ p { margin: 0; }
     var(--epd-navy);
 }
 .epd-faq__panel { padding: 0 44px 22px 0; max-width: 640px; }
+.epd-faq__panel p + p { margin-top: 10px; }
 
 /* ---------- Call benefits ---------- */
 .epd-call { padding: var(--epd-pad) 0; background: var(--epd-stone); }
