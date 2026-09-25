@@ -116,25 +116,43 @@
       </div>
     </section>
 
-    <!-- Gallery: swipe on mobile, flush 2-up grid on desktop. Client project photos from the Drive folder.
-         Add the area to each caption once the client confirms where each project was. -->
+    <!-- Gallery: swipe carousel on every screen size, two and a bit photos in view on desktop with arrow buttons.
+         Client project photos. Add the area to each caption once the client confirms where each project was. -->
     <section class="epd-gallery" aria-labelledby="gallery-title">
-      <div class="epd-wrap">
-        <h2 id="gallery-title" class="epd-h2">Recent work across East London and Essex</h2>
-        <p class="epd-lead">A few of our finished projects.</p>
+      <div class="epd-wrap epd-gallery__head">
+        <div>
+          <h2 id="gallery-title" class="epd-h2">Recent work across East London and Essex</h2>
+          <p class="epd-lead">Swipe through a few of our finished projects.</p>
+        </div>
+        <div class="epd-gallery__nav">
+          <button type="button" class="epd-gallery__btn" data-epd-slide="-1" aria-label="Previous photos" aria-controls="epd-gallery-track">←</button>
+          <button type="button" class="epd-gallery__btn" data-epd-slide="1" aria-label="Next photos" aria-controls="epd-gallery-track">→</button>
+        </div>
       </div>
-      <div class="epd-gallery__track" tabindex="0" aria-label="Project photos">
+      <div class="epd-gallery__track" id="epd-gallery-track" tabindex="0" aria-label="Project photos">
         <figure class="epd-shot">
           <img src="images/kitchen-extension-open-plan.webp" alt="Open-plan kitchen extension with a long island, pendant lights and steel-framed glass doors" width="1600" height="1050" loading="lazy">
           <figcaption>Kitchen extension · open-plan with steel-framed doors</figcaption>
+        </figure>
+        <figure class="epd-shot">
+          <img src="images/new-build-exterior.webp" alt="Three-storey white new-build house with a glazed gable, Juliet balcony and new driveway" width="1000" height="1340" loading="lazy">
+          <figcaption>New build · three storeys with a glazed gable</figcaption>
         </figure>
         <figure class="epd-shot">
           <img src="images/loft-bathroom-skylight.webp" alt="Loft bathroom with a freestanding bath, skylight and palm-print wall tiles" width="1600" height="1058" loading="lazy">
           <figcaption>Loft conversion · bathroom under a new skylight</figcaption>
         </figure>
         <figure class="epd-shot">
+          <img src="images/bathroom-walk-in-shower.webp" alt="Bathroom with a walk-in rainfall shower, green stone-effect tiles and a double vanity" width="1600" height="1200" loading="lazy">
+          <figcaption>Bathroom · walk-in shower and double vanity</figcaption>
+        </figure>
+        <figure class="epd-shot">
           <img src="images/bedroom-panelled-wall.webp" alt="Bedroom with a full-height panelled wall, wall lights and a ceiling fan" width="1600" height="1067" loading="lazy">
           <figcaption>Full refurbishment · bedroom with panelled feature wall</figcaption>
+        </figure>
+        <figure class="epd-shot">
+          <img src="images/bathroom-green-stone-shower.webp" alt="Walk-in shower with a green stone-effect feature wall, oak-effect cabinets and heated towel rail" width="1600" height="1200" loading="lazy">
+          <figcaption>Bathroom · green stone feature wall</figcaption>
         </figure>
         <figure class="epd-shot">
           <img src="images/staircase-panelling.webp" alt="New white staircase with square spindles and panelled walls" width="1000" height="1521" loading="lazy">
