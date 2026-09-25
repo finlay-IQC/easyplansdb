@@ -103,6 +103,28 @@
     blockers.forEach(function (el) { blockObserver.observe(el); });
   }
 
+  /* ---- Gallery arrows: scroll the photo track by roughly one view ---- */
+  var track = document.getElementById('epd-gallery-track');
+  if (track) {
+    var arrows = document.querySelectorAll('[data-epd-slide]');
+    var syncArrows = function () {
+      var max = track.scrollWidth - track.clientWidth - 2;
+      arrows.forEach(function (btn) {
+        var dir = Number(btn.getAttribute('data-epd-slide'));
+        btn.disabled = dir < 0 ? track.scrollLeft <= 2 : track.scrollLeft >= max;
+      });
+    };
+    arrows.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var dir = Number(btn.getAttribute('data-epd-slide'));
+        track.scrollBy({ left: dir * track.clientWidth * 0.85, behavior: 'smooth' });
+      });
+    });
+    track.addEventListener('scroll', syncArrows, { passive: true });
+    window.addEventListener('resize', syncArrows);
+    syncArrows();
+  }
+
   /* ---- Footer year ---- */
   document.querySelectorAll('[data-epd-year]').forEach(function (el) {
     el.textContent = new Date().getFullYear();
