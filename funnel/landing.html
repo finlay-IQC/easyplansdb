@@ -20,21 +20,63 @@
   <!-- TRACKING BODY CODES GO HERE: GTM Body noscript, etc. -->
   <!-- [GTM BODY] -->
 
-  <!-- Hero: photo inside a black inset frame, copy bottom-left over a scrim -->
+  <!-- Hero: photo inside a navy inset frame, copy bottom-left over a scrim.
+       The form sits in the hero so it shows above the fold: over the photo on the right on desktop,
+       straight under the headline on mobile. Every CTA on the page scrolls to #quote. -->
   <header class="epd-hero" id="top">
-    <div class="epd-hero__frame">
-      <img class="epd-hero__img" src="images/kitchen-extension-open-plan.webp" alt="Finished open-plan kitchen extension with a long island and steel-framed glass doors" width="1600" height="1050" fetchpriority="high">
-      <div class="epd-hero__top">
-        <span class="epd-wordmark">Easy Plans <b>DB</b></span>
-        <a class="epd-hero__phone" href="tel:+447506699550" aria-label="Call Easy Plans DB on 07506 699 550">07506 699 550</a>
+    <div class="epd-hero__stage">
+      <div class="epd-hero__frame">
+        <img class="epd-hero__img" src="images/kitchen-extension-open-plan.webp" alt="Finished open-plan kitchen extension with a long island and steel-framed glass doors" width="1600" height="1050" fetchpriority="high">
+        <div class="epd-hero__top">
+          <span class="epd-wordmark">Easy Plans <b>DB</b></span>
+          <a class="epd-hero__phone" href="tel:+447506699550" aria-label="Call Easy Plans DB on 07506 699 550">07506 699 550</a>
+        </div>
+        <div class="epd-hero__copy">
+          <p class="epd-eyebrow epd-eyebrow--light">For homeowners across North &amp; West London, Herts and Essex</p>
+          <h1 class="epd-hero__title">Your renovation, finished on time and on budget</h1>
+          <p class="epd-hero__sub">Extensions, loft conversions, full refurbishments and new builds, designed and built by one team.</p>
+        </div>
       </div>
-      <div class="epd-hero__copy">
-        <p class="epd-eyebrow epd-eyebrow--light">For homeowners across North &amp; West London, Herts and Essex</p>
-        <h1 class="epd-hero__title">Your renovation, finished on time and on budget</h1>
-        <p class="epd-hero__sub">Extensions, loft conversions, full refurbishments and new builds, designed and built by one team.</p>
-        <a class="epd-btn epd-btn--light" href="#quote" data-epd-cta>Book Your Free Project Quote</a>
-        <p class="epd-friction epd-friction--light">Takes 2 minutes. You're not committing to anything.</p>
-      </div>
+
+      <section class="epd-hero__form" id="quote" aria-labelledby="quote-title">
+        <div class="epd-hero__form-head">
+          <h2 id="quote-title">Book Your Free Project Quote</h2>
+          <p>Takes 2 minutes. You're not committing to anything.</p>
+        </div>
+        <div class="epd-hero__form-embed">
+            <!--
+              GoHighLevel form embed.
+              1. Redirect: in GHL > Sites > Forms > "Easy Plans DB" > Options > On Submit,
+                 choose "Open URL" and enter the full live URL of thank-you.html.
+                 UTMs are kept in sessionStorage, so thank-you.html still has them after the redirect.
+              2. Hidden UTM fields: add hidden fields to the GHL form named
+                 utm_source, utm_medium, utm_campaign, utm_content, utm_term, fbclid, gclid, ttclid, msclkid.
+                 script.js adds these values to this iframe's src, and GHL fills matching fields from the query string.
+              3. Lead event (lower intent): only add it here once a Meta Pixel / GA4 code is supplied.
+            -->
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/GCCiI643XnxeJONz8Suz"
+              style="width:100%;height:100%;border:none;border-radius:8px"
+              id="inline-GCCiI643XnxeJONz8Suz"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Easy Plans DB"
+              data-height="undefined"
+              data-layout-iframe-id="inline-GCCiI643XnxeJONz8Suz"
+              data-form-id="GCCiI643XnxeJONz8Suz"
+              data-cookie-consent="true"
+              data-cookie-consent-provider="auto"
+              title="Easy Plans DB">
+            </iframe>
+            <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        </div>
+        <p class="epd-hero__form-call">Rather talk now? Call <a href="tel:+447506699550">07506 699 550</a></p>
+      </section>
     </div>
     <ul class="epd-hero__trust" aria-label="Why homeowners trust us">
       <li><span class="epd-stars" aria-hidden="true">★★★★★</span> 5-star rated on Checkatrade</li>
@@ -44,49 +86,6 @@
   </header>
 
   <main>
-    <!-- Form sits directly under the hero. Every CTA on the page scrolls here. -->
-    <section class="epd-quote" id="quote" aria-labelledby="quote-title">
-      <div class="epd-wrap epd-quote__inner">
-        <div class="epd-quote__intro">
-          <h2 id="quote-title" class="epd-h2">Tell us about your project</h2>
-          <p class="epd-lead">A few quick questions, then we call you to talk it through.</p>
-          <p class="epd-quote__call">Rather talk now? Call <a href="tel:+447506699550">07506 699 550</a></p>
-        </div>
-        <div class="epd-quote__form">
-          <!--
-            GoHighLevel form embed.
-            1. Redirect: in GHL > Sites > Forms > "Easy Plans DB" > Options > On Submit,
-               choose "Open URL" and enter the full live URL of thank-you.html.
-               UTMs are kept in sessionStorage, so thank-you.html still has them after the redirect.
-            2. Hidden UTM fields: add hidden fields to the GHL form named
-               utm_source, utm_medium, utm_campaign, utm_content, utm_term, fbclid, gclid, ttclid, msclkid.
-               script.js adds these values to this iframe's src, and GHL fills matching fields from the query string.
-            3. Lead event (lower intent): only add it here once a Meta Pixel / GA4 code is supplied.
-          -->
-          <iframe
-            src="https://api.leadconnectorhq.com/widget/form/GCCiI643XnxeJONz8Suz"
-            style="width:100%;height:100%;border:none;border-radius:8px"
-            id="inline-GCCiI643XnxeJONz8Suz"
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="Easy Plans DB"
-            data-height="undefined"
-            data-layout-iframe-id="inline-GCCiI643XnxeJONz8Suz"
-            data-form-id="GCCiI643XnxeJONz8Suz"
-            data-cookie-consent="true"
-            data-cookie-consent-provider="auto"
-            title="Easy Plans DB">
-          </iframe>
-          <script src="https://link.msgsndr.com/js/form_embed.js"></script>
-        </div>
-      </div>
-    </section>
-
     <!-- Problem: two-column contrast, what usually happens vs what you get -->
     <section class="epd-contrast" aria-labelledby="contrast-title">
       <div class="epd-wrap">
