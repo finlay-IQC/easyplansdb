@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Easy Plans DB: design and build contractor for full refurbishments, loft conversions and extensions across East London and Essex. Every project run by a building surveyor.">
+<meta property="og:title" content="Easy Plans DB | Design &amp; Build Brochure">
+<meta property="og:description" content="Full refurbishments, loft conversions and extensions across East London and Essex. Run by a building surveyor.">
+<meta property="og:type" content="website">
+<title>Easy Plans DB | Design &amp; Build Brochure</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400&family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  @page { size: A4; margin: 0; }
+  :root{ --navy:#172a5c; --ink:#1a1f2b; --muted:#5b6475; --brass:#c6a15b; --cream:#f5f2ec; --line:#dcd6ca; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Carlito',Calibri,'Segoe UI',Arial,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:210mm;height:297mm;position:relative;overflow:hidden;background:#fff;page-break-after:always}
+  .page:last-child{page-break-after:auto}
+  h1,h2,h3{font-family:'Caladea',Cambria,Georgia,serif}
+  .eyebrow{font-size:8.5pt;letter-spacing:.32em;text-transform:uppercase;font-weight:700;color:var(--brass)}
+  h2{font-weight:700;font-size:26pt;line-height:1.08;color:var(--navy)}
+  p{font-size:10pt;line-height:1.55;color:var(--muted)}
+  .pad{padding:16mm 18mm}
+  .foot{position:absolute;left:18mm;right:18mm;bottom:9mm;display:flex;justify-content:space-between;font-size:7.5pt;color:var(--muted);letter-spacing:.04em;border-top:1px solid var(--line);padding-top:3mm}
+  .ph{background-size:cover;background-position:center;background-color:#ddd}
+  .brand{display:flex;align-items:center;gap:4mm}
+  .mark{width:12mm;height:12mm;border:1.5px solid var(--brass);display:grid;place-items:center;font-family:'Caladea',serif;font-weight:700;font-size:12pt;color:var(--brass)}
+  .brand .n{font-family:'Caladea',serif;font-weight:700;font-size:16pt;letter-spacing:.06em;color:#fff}
+  .brand .s{font-size:7pt;letter-spacing:.34em;color:#d9deea;margin-top:1mm}
+
+  .cover{background:var(--navy);color:#fff}
+  .cover .hero{position:absolute;left:0;right:0;top:0;height:158mm}
+  
+  .cover .top{position:absolute;left:18mm;top:14mm;z-index:2}
+  .cover h1{position:absolute;left:18mm;right:18mm;top:112mm;z-index:2;font-weight:700;font-size:31pt;line-height:1.05}
+  .cover h1 em{font-style:italic;color:var(--brass);font-weight:400}
+  .cover .lede{position:absolute;left:18mm;right:18mm;top:162mm;color:#cfd5e6;font-size:11pt;line-height:1.5}
+  .pill{display:inline-block;border:1px solid var(--brass);color:var(--brass);font-size:8pt;letter-spacing:.3em;font-weight:700;padding:2.4mm 5mm}
+  .apart{position:absolute;left:18mm;right:18mm;top:186mm;display:grid;grid-template-columns:42mm 1fr;gap:9mm}
+  .big{font-family:'Caladea',serif;font-size:50pt;font-weight:700;line-height:.9}
+  .big small{display:block;font-family:'Carlito',sans-serif;font-size:7.5pt;letter-spacing:.26em;color:var(--brass);margin-top:3mm;font-weight:700}
+  .ticks{list-style:none;border-top:1px solid #3d4d7a}
+  .ticks li{display:flex;gap:4mm;font-size:9.8pt;color:#e6e9f2;line-height:1.4;padding:2.3mm 0;border-bottom:1px solid #3d4d7a}
+  .ticks li b{color:var(--brass)}
+  .stats{position:absolute;left:0;right:0;bottom:0;height:28mm;background:var(--cream);display:grid;grid-template-columns:repeat(4,1fr);padding:0 18mm}
+  .stat{display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--line);padding-left:5mm}
+  .stat:first-child{border-left:0;padding-left:0}
+  .stat .v{font-family:'Caladea',serif;font-size:15pt;font-weight:700;color:var(--navy)}
+  .stat .l{font-size:7pt;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:1mm;font-weight:700}
+
+  .band{background:var(--cream);padding:15mm 18mm 11mm;display:grid;grid-template-columns:1fr 62mm;gap:9mm}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-top:5mm}
+  .card{border:1px solid var(--line);padding:5mm}
+  .card .k{font-family:'Caladea',serif;color:var(--brass);font-size:18pt;font-weight:700;line-height:1}
+  .card h4{font-size:10.5pt;color:var(--navy);margin:2.5mm 0 1.5mm}
+  .card p{font-size:8.8pt;line-height:1.45}
+  .area{display:grid;grid-template-columns:38mm 1fr;padding:2.4mm 0;border-bottom:1px solid var(--line)}
+  .area:first-of-type{border-top:1px solid var(--line)}
+  .area .c{font-size:8pt;letter-spacing:.2em;font-weight:700;color:var(--navy)}
+  .area .t{font-size:9.6pt;color:var(--muted)}
+
+  .svc{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-top:6mm}
+  .svc .img{height:44mm}
+  .svc .body{border:1px solid var(--line);border-top:0;padding:4.5mm}
+  .svc .tag{font-size:7pt;letter-spacing:.22em;color:var(--brass);font-weight:700}
+  .svc h3{font-size:14pt;color:var(--navy);margin:1.5mm 0 2mm;line-height:1.1}
+  .svc p{font-size:8.7pt;line-height:1.45}
+  .svc .from{margin-top:3mm;font-size:8pt;font-weight:700;color:var(--navy);letter-spacing:.06em}
+  .step{display:grid;grid-template-columns:12mm 1fr;padding:2.8mm 0;border-bottom:1px solid var(--line)}
+  .step.first{border-top:1px solid var(--line)}
+  .step .num{font-family:'Caladea',serif;font-size:18pt;color:var(--brass);font-weight:700;line-height:1}
+  .step h5{font-size:10.5pt;color:var(--navy)}
+  .step p{font-size:9pt;margin-top:.6mm;line-height:1.45}
+
+  .phead{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:5mm}
+  .phead .no{font-family:'Caladea',serif;font-size:40pt;color:var(--line);font-weight:700;line-height:.8}
+  .ptitle{font-size:19pt;color:var(--navy);font-weight:700;margin-top:2mm;line-height:1.1;font-family:'Caladea',serif}
+  .pdesc{font-size:9.4pt;margin-top:2mm;max-width:135mm}
+  .g{display:grid;gap:3mm}
+
+  .ct{display:flex;align-items:center;gap:5mm;margin-top:5mm}
+  .ct .score{background:var(--navy);color:#fff;font-family:'Caladea',serif;font-size:14pt;font-weight:700;padding:3mm 5mm;letter-spacing:.04em;white-space:nowrap}
+  .rv{border:1px solid var(--line);padding:5mm 6mm;background:#fff}
+  .rv .top{display:flex;justify-content:space-between;align-items:center}
+  .rv .sc{background:#e8ebf6;color:var(--navy);font-weight:700;font-size:11pt;padding:1.2mm 3mm;margin-right:3mm}
+  .rv .job{font-size:10pt;font-weight:700;color:var(--navy);flex:1}
+  .rv .loc{font-size:7.5pt;letter-spacing:.16em;color:var(--brass);font-weight:700}
+  .rv q{display:block;font-family:'Caladea',serif;font-style:italic;font-size:11pt;line-height:1.45;color:var(--ink);margin-top:3mm}
+  .rv .ver{font-size:7.5pt;color:var(--muted);margin-top:2.5mm;letter-spacing:.06em}
+
+  .cta-top{position:relative;height:98mm;color:#fff}
+  
+  .cta-top .in{position:absolute;left:18mm;right:18mm;bottom:12mm;z-index:2}
+  .cta-top h2{color:#fff;font-size:31pt;margin-top:3mm}
+  .cta-top p{color:#dfe3ee;font-size:10.3pt;margin-top:4mm}
+  .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:10mm;padding:10mm 18mm 0}
+  .list{list-style:none;margin-top:3mm}
+  .list li{font-size:9.4pt;padding:2.3mm 0;border-bottom:1px solid var(--line);display:flex;gap:3mm;line-height:1.4}
+  .list li::before{content:"";flex:0 0 2.2mm;height:2.2mm;margin-top:1.3mm;background:var(--brass);transform:rotate(45deg)}
+  h3.sm{font-size:15pt;color:var(--navy);margin-top:1.5mm}
+  .contact{margin:8mm 18mm 0;background:var(--cream);padding:7mm 9mm;display:grid;grid-template-columns:1.1fr 1fr;gap:8mm;align-items:center}
+  .contact .big2{font-family:'Caladea',serif;font-size:22pt;color:var(--navy);font-weight:700}
+  .contact .row{font-size:9.6pt;padding:1.4mm 0}
+  .contact .row span{display:inline-block;width:16mm;font-size:7pt;letter-spacing:.2em;color:var(--brass);font-weight:700}
+  .closer{position:absolute;left:0;right:0;bottom:0;height:34mm;background:var(--navy);padding:9mm 18mm;display:flex;justify-content:space-between;align-items:center}
+</style>
+<style>
+  html,body{background:#d9dce4}
+  body{padding-inline:16px;padding-block:24px}
+  .deck{display:flex;flex-direction:column;align-items:center;gap:20px}
+  .page{zoom:var(--z,1);box-shadow:0 6px 28px rgba(23,42,92,.18);flex:none}
+  @media print{html,body{background:#fff;padding:0}.deck{gap:0}.page{zoom:1;box-shadow:none}}
+</style>
+<script>
+  (function(){function fit(){var w=document.documentElement.clientWidth-32;var z=Math.min(1,w/794);document.documentElement.style.setProperty('--z',z.toFixed(4));}
+  fit();addEventListener('resize',fit);})();
+</script>
+</head>
+<body>
+<div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:20px;font-family:'Carlito',Calibri,Arial,sans-serif">
+  <a href="brochure/easy-plans-db-brochure.pdf" download style="background:#172a5c;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.14em;font-size:12px;padding:12px 20px">DOWNLOAD PDF</a>
+  <a href="tel:07506699550" style="border:1px solid #172a5c;color:#172a5c;text-decoration:none;font-weight:700;letter-spacing:.14em;font-size:12px;padding:11px 20px">CALL 07506 699550</a>
+</div>
+<main class="deck">
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="hero ph" style="background-image:url(brochure/web/cover_baked.jpg)"></div>
+  <div class="top brand"><div class="mark">EP</div><div><div class="n">EASY PLANS DB</div><div class="s">DESIGN &amp; BUILD · EAST LONDON &amp; ESSEX</div></div></div>
+  <h1>Planned, designed and built<br>by one company.<br><em>Run by a building surveyor.</em></h1>
+  <div class="lede">Full refurbishments, loft conversions and extensions across East London and Essex. Projects from £50,000.&nbsp;&nbsp;<span class="pill">FREE SITE VISIT AVAILABLE</span></div>
+  <div class="apart">
+    <div class="big">30+<small>YEARS COMBINED<br>EXPERIENCE</small></div>
+    <ul class="ticks">
+      <li><b>—</b>Every project managed start to finish by a qualified building surveyor</li>
+      <li><b>—</b>Drawings, planning and building regs handled in-house, so there's no separate architect to find</li>
+      <li><b>—</b>Our own qualified trades on site. We don't subcontract your home out</li>
+      <li><b>—</b>Verified Checkatrade reviews on lofts, extensions and full refurbs</li>
+    </ul>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="v">Surveyor-led</div><div class="l">Every project</div></div>
+    <div class="stat"><div class="v">In-house</div><div class="l">Design, planning &amp; build</div></div>
+    <div class="stat"><div class="v">Checkatrade</div><div class="l">Verified reviews</div></div>
+    <div class="stat"><div class="v">£50k+</div><div class="l">Project range</div></div>
+  </div>
+</section>
+
+<!-- 2 ABOUT -->
+<section class="page">
+  <div class="band">
+    <div>
+      <div class="eyebrow">About Easy Plans DB</div>
+      <h2 style="margin-top:4mm">Built properly.<br>Managed by a professional.</h2>
+      <p style="margin-top:5mm">Easy Plans DB is a design and build contractor based in Woodford, Essex. The business was founded by a building surveyor and a builder, who have more than 30 years of combined experience in construction.</p>
+      <p style="margin-top:3mm">We handle every stage ourselves: initial drawings and design, planning permission, building regulations approval, project management and the build itself. That means you never have to manage a separate architect, structural engineer, surveyor and builder.</p>
+    </div>
+    <div class="ph" style="background-image:url(brochure/web/48.jpg)"></div>
+  </div>
+  <div class="pad" style="padding-top:9mm">
+    <div class="eyebrow">What sets us apart</div>
+    <h2 style="font-size:21pt;margin-top:3mm">Three things most builders can't say.</h2>
+    <div class="cards">
+      <div class="card"><div class="k">01</div><h4>A surveyor runs your job</h4><p>A qualified building surveyor oversees your project from the first site visit to handover. It's a professional credential, not a sales rep's promise.</p></div>
+      <div class="card"><div class="k">02</div><h4>Design and build in one</h4><p>Drawings, planning and building regs are handled for you. You won't need to hire an architect and then go looking for a builder.</p></div>
+      <div class="card"><div class="k">03</div><h4>Our own trades</h4><p>Our qualified bricklayers, carpenters, roofers, electricians, plumbers and plasterers work on your job. We don't subcontract it out.</p></div>
+    </div>
+    <div class="eyebrow" style="margin-top:8mm">Where we work</div>
+    <h2 style="font-size:21pt;margin-top:3mm;margin-bottom:4mm">East London &amp; Essex.</h2>
+    <div class="area"><div class="c">EAST LONDON · E</div><div class="t">Stratford · Leyton · Walthamstow · Forest Gate · South Woodford</div></div>
+    <div class="area"><div class="c">ILFORD · IG</div><div class="t">Ilford · Woodford Green · Chigwell · Loughton · Barkingside</div></div>
+    <div class="area"><div class="c">ROMFORD · RM</div><div class="t">Romford · Hornchurch · Upminster · Gidea Park · Dagenham</div></div>
+    <div class="area"><div class="c">CHELMSFORD · CM</div><div class="t">Chelmsford · Brentwood · Billericay · Ingatestone</div></div>
+    <div class="area"><div class="c">SELECTED DA &amp; ME</div><div class="t">Selected projects across Dartford and Medway</div></div>
+  </div>
+  <div class="foot"><span>easyplans-db.com · 07506 699550 · info@easyplans-db.com</span><span>02</span></div>
+</section>
+
+<!-- 3 SERVICES + PROCESS -->
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">What we build</div>
+    <h2 style="margin-top:3mm">One team. Every stage.</h2>
+    <div class="svc">
+      <div><div class="img ph" style="background-image:url(brochure/web/47.jpg)"></div><div class="body"><div class="tag">FULL REFURBISHMENT</div><h3>Whole-home renovation</h3><p>Kitchens, bathrooms, layouts, first fix to final finish. Every trade is managed under one roof.</p><div class="from">FROM £50,000</div></div></div>
+      <div><div class="img ph" style="background-image:url(images/loft-bathroom-skylight.webp)"></div><div class="body"><div class="tag">LOFT CONVERSION</div><h3>Space you already own</h3><p>We handle the drawings, structural work and building regs, and deliver a finished room.</p><div class="from">FROM £50,000</div></div></div>
+      <div><div class="img ph" style="background-image:url(brochure/web/33.jpg)"></div><div class="body"><div class="tag">EXTENSIONS</div><h3>Rear, side &amp; wrap-around</h3><p>Single-storey, double-storey and wrap-around extensions, designed, approved and built as one project.</p><div class="from">FROM £50,000</div></div></div>
+    </div>
+    <p style="margin-top:3.5mm;font-size:8.8pt"><b style="color:var(--navy)">Also:</b> basement and garage conversions, and new builds.</p>
+    <div class="eyebrow" style="margin-top:8mm">How we work</div>
+    <h2 style="font-size:21pt;margin:3mm 0 4mm">From first call to handover.</h2>
+    <div class="step first"><div class="num">1</div><div><h5>Free consultation</h5><p>A call with the Easy Plans DB team to discuss your project, what you want to achieve, your budget and your timeline.</p></div></div>
+    <div class="step"><div class="num">2</div><div><h5>Surveyor site visit</h5><p>Dave visits your property and assesses the building, the space and what's possible before anything is drawn or priced.</p></div></div>
+    <div class="step"><div class="num">3</div><div><h5>Design, drawings &amp; approvals</h5><p>We produce the drawings in-house and handle planning permission and building regulations for you.</p></div></div>
+    <div class="step"><div class="num">4</div><div><h5>Written quote</h5><p>A clear written quote built from your drawings and the conditions on site, so you know exactly what you're paying for.</p></div></div>
+    <div class="step"><div class="num">5</div><div><h5>The build, surveyor-managed</h5><p>Our own trades carry out the work, with a building surveyor overseeing the job from start to finish.</p></div></div>
+  </div>
+  <div class="foot"><span>easyplans-db.com · 07506 699550 · info@easyplans-db.com</span><span>03</span></div>
+</section>
+
+<!-- 4 PORTFOLIO 01 -->
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">Portfolio</div>
+    <h2 style="margin-top:3mm;margin-bottom:7mm">Recent projects.</h2>
+    <div class="phead"><div><div class="eyebrow" style="font-size:7.5pt">Project 01 · Extension &amp; full interior</div><div class="ptitle">Open-plan kitchen extension</div><p class="pdesc">Rear extension with exposed steel, full-height glazing, herringbone flooring and a dark kitchen with a statement marble island, plus a fully finished living and dining space.</p></div><div class="no">01</div></div>
+    <div class="g" style="grid-template-columns:2fr 1fr;grid-template-rows:62mm 62mm">
+      <div class="ph" style="grid-row:span 2;background-image:url(brochure/web/40.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/51.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/37.jpg)"></div>
+    </div>
+    <div class="g" style="grid-template-columns:repeat(3,1fr);grid-template-rows:48mm;margin-top:3mm">
+      <div class="ph" style="background-image:url(brochure/web/49.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/46.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/50.jpg)"></div>
+    </div>
+  </div>
+  <div class="foot"><span>easyplans-db.com · 07506 699550 · info@easyplans-db.com</span><span>04</span></div>
+</section>
+
+<!-- 5 PORTFOLIO 02 -->
+<section class="page">
+  <div class="pad">
+    <div class="phead"><div><div class="eyebrow" style="font-size:7.5pt">Project 02 · Extension &amp; refurbishment</div><div class="ptitle">Light-filled kitchen extension</div><p class="pdesc">Single-storey rear extension with roof lights and bi-fold doors onto a new patio, a shaker kitchen with a stone island, and a full refresh of the bedrooms, hallway and bathroom.</p></div><div class="no">02</div></div>
+    <div class="ph" style="height:78mm;background-image:url(brochure/web/35.jpg)"></div>
+    <div class="g" style="grid-template-columns:1fr 1fr;grid-template-rows:44mm 44mm 44mm;margin-top:3mm">
+      <div class="ph" style="background-image:url(brochure/web/39.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/28.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/32.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/31.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/43.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/42.jpg)"></div>
+    </div>
+  </div>
+  <div class="foot"><span>easyplans-db.com · 07506 699550 · info@easyplans-db.com</span><span>05</span></div>
+</section>
+
+<!-- 6 PORTFOLIO 03 + 04 -->
+<section class="page">
+  <div class="pad">
+    <div class="phead"><div><div class="eyebrow" style="font-size:7.5pt">Project 03 · Contemporary home</div><div class="ptitle">Contemporary gabled home</div><p class="pdesc">A striking gabled home with full-height glazing, set behind a gated driveway with rendered piers and a new tarmac drive.</p></div><div class="no">03</div></div>
+    <div class="g" style="grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:42mm 42mm">
+      <div class="ph" style="grid-row:span 2;background-image:url(brochure/web/02.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/05.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/21.jpg)"></div>
+      <div class="ph" style="grid-column:span 2;background-image:url(brochure/web/10.jpg);background-position:center 60%"></div>
+    </div>
+    <div class="phead" style="margin-top:9mm"><div><div class="eyebrow" style="font-size:7.5pt">Project 04 · Bathrooms</div><div class="ptitle">Bathroom finishes</div><p class="pdesc">Large-format stone-effect tiling, walk-in glass showers, wall-hung sanitaryware, double vanities and integrated lighting.</p></div><div class="no">04</div></div>
+    <div class="g" style="grid-template-columns:repeat(3,1fr);grid-template-rows:44mm 44mm">
+      <div class="ph" style="grid-column:span 2;background-image:url(brochure/web/14.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/36.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/04.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/08.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/30.jpg)"></div>
+    </div>
+  </div>
+  <div class="foot"><span>easyplans-db.com · 07506 699550 · info@easyplans-db.com</span><span>06</span></div>
+</section>
+
+<!-- 7 REVIEWS -->
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">What our clients say</div>
+    <h2 style="margin-top:3mm">Quality. Honesty. Delivery.</h2>
+    <div class="ct"><div class="score">✓ CHECKATRADE</div><p style="font-size:9.6pt;max-width:125mm">Verified reviews from homeowners on the Easy Plans Design and Build Ltd Checkatrade profile, across Romford, Hornchurch, Ilford and East London.</p></div>
+    <div style="display:grid;gap:4mm;margin-top:7mm">
+      <div class="rv"><div class="top"><span class="sc">10</span><span class="job">Loft conversion &amp; double storey extension</span><span class="loc">RM14</span></div>
+        <q>Excellent experience from start to finish. Dave offered advice and guidance throughout the build and gave solutions that helped us achieve more than we could have expected. They stuck to quote and the timeline they gave for completion. The aftercare has also been amazing. Highly recommend.</q><div class="ver">✓ Verified Checkatrade reviewer</div></div>
+      <div class="rv"><div class="top"><span class="sc">10</span><span class="job">Loft conversion</span><span class="loc">IG2</span></div>
+        <q>All the plans and building works undertaken by Dave. The building work was carried out to a very high level. Dave took control of everything and I had no stress getting involved with this project. Dave's expertise in planning allowed us to even have an en-suite in the loft.</q><div class="ver">✓ Verified Checkatrade reviewer</div></div>
+      <div class="rv"><div class="top"><span class="sc">9.75</span><span class="job">Loft extension &amp; full house refurbishment</span><span class="loc">IG3</span></div>
+        <q>We needed the work to be completed within 3 months, and to Dave's word the work was completed within the time frame. The quality and workmanship was excellent.</q><div class="ver">✓ Verified Checkatrade reviewer</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4mm">
+        <div class="rv"><div class="top"><span class="sc">10</span><span class="job">Loft conversion</span><span class="loc">RM1</span></div>
+          <q>Converted my loft to a double bedroom with an en-suite. The work was completed with no delays as well as a quality finish.</q><div class="ver">✓ Verified Checkatrade reviewer</div></div>
+        <div class="rv"><div class="top"><span class="sc">10</span><span class="job">HMO conversion</span><span class="loc">E7</span></div>
+          <q>Done really well and really reliably. Very helpful and respectful to neighbours. Friendly and polite.</q><div class="ver">✓ Verified Checkatrade reviewer</div></div>
+      </div>
+    </div>
+    <div class="g" style="grid-template-columns:repeat(3,1fr);grid-template-rows:34mm;margin-top:5mm">
+      <div class="ph" style="background-image:url(brochure/web/45.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/23.jpg)"></div>
+      <div class="ph" style="background-image:url(brochure/web/38.jpg)"></div>
+    </div>
+  </div>
+  <div class="foot"><span>Read more: checkatrade.com/trades/easyplansdesignandbuild</span><span>07</span></div>
+</section>
+
+<!-- 8 CTA -->
+<section class="page">
+  <div class="cta-top ph" style="background-image:url(brochure/web/cta_baked.jpg)">
+    <div class="in">
+      <div class="eyebrow">No obligation · No cost · No sales pitch</div>
+      <h2>Book your free consultation.</h2>
+      <p>You know you need more space, or a home that works properly. What you need now is one company you can trust to plan, design and build it. An Easy Plans DB consultation is a genuine professional conversation about your home, with the person who would run the job.</p>
+    </div>
+  </div>
+  <div class="cta-grid">
+    <div>
+      <div class="eyebrow">What happens next</div>
+      <h3 class="sm">After you get in touch.</h3>
+      <ul class="list">
+        <li>We call you back to discuss your project, scope and timeline</li>
+        <li>If it's a fit, we arrange a site visit with Dave at your property</li>
+        <li>We handle the design, drawings and approvals</li>
+        <li>You get a clear written quote before any work is agreed</li>
+        <li>No pressure and no lock-in, ever</li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow">Is your project a fit?</div>
+      <h3 class="sm">We work on projects from £50,000.</h3>
+      <ul class="list">
+        <li>Full refurbishment, loft conversion or extension</li>
+        <li>Project value of £50,000 or more</li>
+        <li>Located in E, IG, RM or CM (selected DA &amp; ME)</li>
+        <li>You want one company to handle design, planning and build</li>
+        <li>You're a homeowner ready to move forward</li>
+      </ul>
+    </div>
+  </div>
+  <div class="contact">
+    <div><div class="eyebrow">Get in touch</div><div class="big2" style="margin-top:2mm">07506 699550</div><p style="margin-top:1.5mm;font-size:9pt">Speak to the team directly about your project.</p></div>
+    <div>
+      <div class="row"><span>EMAIL</span>info@easyplans-db.com</div>
+      <div class="row"><span>WEB</span>easyplans-db.com</div>
+      <div class="row"><span>OFFICE</span>18 Grosvenor Road, Romford RM7 0QT</div>
+    </div>
+  </div>
+  <div class="closer">
+    <div class="brand"><div class="mark">EP</div><div><div class="n">EASY PLANS DB</div><div class="s">DESIGN &amp; BUILD · EAST LONDON &amp; ESSEX</div></div></div>
+    <div style="color:#aab3cc;font-size:7.5pt;text-align:right;line-height:1.6">Easy Plans DB Limited<br>easyplans-db.com · 07506 699550</div>
+  </div>
+</section>
+</main>
+</body>
+</html>
