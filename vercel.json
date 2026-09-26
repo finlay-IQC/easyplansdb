@@ -1,6 +1,16 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/funnel/landing.html" },
-    { "source": "/:path((?!funnel/).*)", "destination": "/funnel/:path" }
+    {
+      "source": "/",
+      "destination": "/funnel/landing.html"
+    },
+    {
+      "source": "/brochure",
+      "destination": "/funnel/brochure.html"
+    },
+    {
+      "source": "/:path((?!funnel/).*)",
+      "destination": "/funnel/:path"
+    }
   ]
 }
